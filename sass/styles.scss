@@ -44,10 +44,6 @@ button {
 button:hover {
 	background-color:#ffffff;
 }
-button:active {
-	position:relative;
-	top:1px;
-}
 
 a {
     color: black;
@@ -148,10 +144,10 @@ footer {
     background: $bg-color-darkgrey;
 }
 
-button#backToTop {
+#backToTop {
     border: 1;
     box-shadow: none;
-    padding: .75em;
+    margin: 2em;
 }
 
 #backToTop {
@@ -165,10 +161,7 @@ button#backToTop {
     cursor: pointer;
     border-radius: 10px;
     display: none;
-}
-
-#backToTop:hover {
-    background-color: #FAFAFA;
+    padding-top: 50px;
 }
 
 

@@ -1,1 +1,35 @@
 @import '_vars';
+
+/* ------------- Global ------------- */
+.hidden {
+    display: none;
+}
+
+/* ----- Product Colour Circles ----- */
+#colourList li { 
+    display:inline; 
+    list-style-type:none; 
+    padding:0px 10px; 
+    cursor:pointer; 
+}
+
+.colourCircle { 
+    height: 25px;
+    width: 25px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+    
+.black { background-color: $prodBlack; }  
+.silver { background-color: $prodSilver; }
+.gold{ background-color: $prodGold; }
+    /* ----- End Product Colour Circles ----- */
+
+    .chip {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: thin dashed #333;
+    }

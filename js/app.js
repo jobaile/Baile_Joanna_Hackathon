@@ -8,6 +8,8 @@
 	var imageShown = document.querySelector("#show");
     //console.log(listColours);
 
+  var TopBtn = document.querySelector('#backToTop');
+
   var showInfo = document.querySelector(".productImage");
   var details = document.querySelector(".products");
   
@@ -16,6 +18,26 @@
 		imageShown.src="images/" + set[evt.currentTarget.dataset.nav]+".jpg";
 	}
     //console.log("from changeProduct");
+
+  //This tracks the scrolling
+  function trackScroll() {
+    console.log( 'top: '  + (window.pageYOffset || document.documentElement.scrollTop) + ' ' + 'left: ' + (window.pageXOffset || document.documentElement.scrollLeft) );
+    var scroll = window.pageYOffset;
+    if (scroll > 40) {
+      TopBtn.style.display = ("block");
+    }
+    if (scroll < 40) {
+      TopBtn.style.display = ("none");
+    }
+  }
+
+  //Back To Top function
+  function backToTop() {
+    if (window.pageYOffset > 0) {
+      window.scrollBy(0, -20);
+      setTimeout(backToTop, 0);
+    }
+  }
   
   function getResults() {
     details.style.display = "block";
@@ -59,6 +81,7 @@
 		listColours[i].addEventListener("click", changeProduct, false);
   }
   
-  showInfo.addEventListener("onmouseover", getResults);
+  window.addEventListener('scroll', trackScroll);
+  TopBtn.addEventListener('click', backToTop);
 	
 })();

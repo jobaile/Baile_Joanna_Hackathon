@@ -26,13 +26,13 @@
               <a class="nav-link" href="#">our product</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">features</a>
+              <a class="nav-link" href="#section-features">features</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">reviews</a>
+              <a class="nav-link" href="#reviewContainer">reviews</a>
             </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="#">apps</a>
+            <li class="nav-item">
+              <a class="nav-link" href="#infoContainer">apps</a>
             </li>
           </ul>
         </div>
@@ -50,11 +50,21 @@
         <!--Product Image-->
       <section id="productContainer">
         <div class="row">
+            <div class="col-12 col-md-6">
+                <img src="images/image01.jpg" class="img-fluid" alt="Thermostat" id="show"/>
+                  <div id="productColours">
+                    <ul id="colourList">
+                        <li><div class="colourCircle gold" data-nav="0"></div></li>
+                        <li><div class="colourCircle black" data-nav="1"></div></li>
+                        <li><div class="colourCircle silver" data-nav="2"></div></li>                
+                    </ul>
+                  </div>
+              </div>
           <!--About The Product-->
           <div class="col-12 col-md-6">
             <h2>What is HomeCon ThermoSecure?</h2>
             <p>The HomeCon learning Thermostat is the first thermostat to get ENERGY STAR certified. It learns what temperature you like and builds a schedule around yours to help save energy.<br><br>Since 2011, the ThermoSecure Thermostat has saved billions of kWh of energy in millions of homes worldwide.* And independent studies showed that it saved people an average of 10% to 12% on heating bills and 15% on cooling bills.</p>
-            <button><a href="#">LEARN MORE</a></button>
+            <button id="learn">LEARN MORE</button>
           </div>
         </div>
       </section>
@@ -62,19 +72,9 @@
 	  	<!--SECTION: Product Features -->
         <section id="featureContainer">
           <div class="row">
-            <div class="col-12 col-md-6">
-              <img src="images/image01.jpg" alt="Thermostat" id="show"/>
-                <div id="productColours">
-                  <ul id="colourList">
-                      <li><div class="colourCircle gold" data-nav="0"></div></li>
-                      <li><div class="colourCircle black" data-nav="1"></div></li>
-                      <li><div class="colourCircle silver" data-nav="2"></div></li>                
-                  </ul>
-                </div>
-            </div>
-            <div class="results col-12 col-md-6">
-              <ul class="products"></ul>
-            </div>
+          </div>
+          <div>
+            <ul class="products"></ul>
           </div>
         </section>
       
@@ -159,7 +159,7 @@
 	  	<!--SECTION: Footer -->
 	  	<footer>
         <div class="text-center">
-	  		<img src="images/midterm-logo.svg" height="200" alt="HouseCom ThermoSecure Logo">
+	  		<img src="images/midterm-logo.svg" height="200" id="botLogo" alt="HouseCom ThermoSecure Logo">
         </div>
       </footer>
       <button id="backToTop">Back To Top</button>

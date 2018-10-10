@@ -1,15 +1,20 @@
 @import '_vars';
 
-h1, h2, p, a {
+h1, h2, h3, p, a {
     font-family: 'Raleway', sans-serif;
 }
 
-h1, h2 {
+h1, h2, h3 {
     color: $text-light-blue;
     font-weight: 300;
 }
 
-h3, h4 {
+h2 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+h4 {
     color: $text-grey;
 }
 
@@ -102,6 +107,18 @@ header p {
 /* ---- Feature ----- */
 #featureContainer {
     margin: 2em;
+}
+
+#section-features {
+    background-color: $bg-color-darkgrey;
+}
+
+#section-features p {
+    color: $bg-color-offwhite;
+}
+
+h3 {
+    color: $text-light-blue;
 }
 
 /* --- Review --- */

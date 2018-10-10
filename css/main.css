@@ -1,2 +1,6 @@
 .hidden{display:none}#colourList li{display:inline;list-style-type:none;padding:0px 10px;cursor:pointer}.colourCircle{height:25px;width:25px;background-color:#bbb;border-radius:50%;display:inline-block}.black{background-color:#000}.silver{background-color:#747474}.gold{background-color:#dbcd09}.chip{display:inline-block;width:20px;height:20px;border-radius:50%;border:thin dashed #333}
 /*# sourceMappingURL=main.css.map */
+
+.productDesc {
+    display: none;
+}

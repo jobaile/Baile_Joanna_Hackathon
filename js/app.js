@@ -1,7 +1,24 @@
 (() => {
-  "use strict";
   //console.log("Hackathon started");
+  "use strict";
+
+  //variables
+	var set = ["image01", "image02", "image03"];
+	var listColours = document.querySelectorAll(".colourCircle");
+	var imageShown = document.querySelector("#show");
+    //console.log(listColours);
+
+  var showInfo = document.querySelector(".productImage");
+  var details = document.querySelector(".products");
+  
+  //functions
+  function changeProduct(evt) {
+		imageShown.src="images/" + set[evt.currentTarget.dataset.nav]+".jpg";
+	}
+    //console.log("from changeProduct");
+  
   function getResults() {
+    details.style.display = "block";
     console.log('hit get results');
     const dataContainer = document.querySelector('.products');
     fetch('php/product/read.php')
@@ -32,24 +49,16 @@
     });
   }
   // fire off the fetch call
-  getResults();
-	
-//variables
-	var set = ["image01", "image02", "image03"];
-	var listColours = document.querySelectorAll(".colourCircle");
-	var imageShown = document.querySelector("#show");
-	//console.log(listColours);
+
+    getResults();
 
 //functions
-	function changeProduct(evt) {
-		imageShown.src="images/" + set[evt.currentTarget.dataset.nav]+".jpg";
-	}
-	//console.log("from changeProduct");
-
 
 //listeners 
 	for(var i=0; i<listColours.length; i++){
 		listColours[i].addEventListener("click", changeProduct, false);
-	}
+  }
+  
+  showInfo.addEventListener("onmouseover", getResults);
 	
 })();

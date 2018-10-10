@@ -18,6 +18,9 @@ h4 {
     color: $text-grey;
 }
 
+ol li {
+    color: $text-grey;
+}
 /* ------------- Global ------------- */
 body {
     background: $bg-color-offwhite;
@@ -140,6 +143,9 @@ h3 {
     margin-top: 50px;
 }
 /* ----- Product Colour Circles ----- */
+#productCircle {
+    margin-top: 10px;
+}
 #colourList li { 
     display:inline; 
     list-style-type:none; 
@@ -188,13 +194,6 @@ button#backToTop {
     background-color: #FAFAFA;
 }
 
-
-    /* ----- End Product Colour Circles ----- */
-
-    .chip {
-        display: inline-block;
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        border: thin dashed #333;
-    }
+#botLogo {
+    cursor: pointer;
+}

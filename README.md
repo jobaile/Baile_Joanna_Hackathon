@@ -1,6 +1,8 @@
 # Hackathon
 Fanshawe Hackathon Project
 
+![logo](https://github.com/jobaile/Baile_Joanna_Hackathon/blob/master/images/midterm-logo.svg)
+
 ## Getting Started
 We created the documents necessary for the project.
 This product page is built with the Bootstrap framework.
@@ -27,11 +29,11 @@ $ cd Desktop
 
 # Clone this repository into your local machine
 
-$ git clone 
+$ git clone https://github.com/jobaile/Baile_Joanna_Hackathon.git
 
 # Go into the repository
 
-$ cd 
+$ cd Baile_Joanna_Hackathon
 
 ```
 

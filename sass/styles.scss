@@ -1,10 +1,127 @@
 @import '_vars';
 
+h1, h2, p, a {
+    font-family: 'Raleway', sans-serif;
+}
+
+h1, h2 {
+    color: $text-light-blue;
+    font-weight: 300;
+}
+
+h3, h4 {
+    color: $text-grey;
+}
+
 /* ------------- Global ------------- */
+body {
+    background: $bg-color-offwhite;
+}
+
 .hidden {
     display: none;
 }
 
+p {
+    color: $text-grey;
+    font-size: 1.2em;
+}
+
+button {
+	background-color:#ffffff;
+	-moz-border-radius:16px;
+	-webkit-border-radius:16px;
+	border-radius:16px;
+	border:1px solid $text-grey;
+	display:inline-block;
+	cursor:pointer;
+	color:$text-grey;
+	font-family:Arial;
+	font-size:15px;
+	padding:10px 25px;
+	text-decoration:none;
+}
+button:hover {
+	background-color:#ffffff;
+}
+button:active {
+	position:relative;
+	top:1px;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+    color: $text-grey;
+}
+
+/* ----------- Header --------------- */
+header {
+    background: url('../images/bckgnd-landing-page.jpg');
+    background-size: cover;
+}
+header p {
+    margin-top: 10em;
+    font-size: 1.5em;
+}
+
+#headerText {
+    padding-bottom: 5em;
+}
+
+#topLogo {
+    display: block;
+    margin: 0 auto;
+    width: 210px;
+}
+
+@media (min-width: 768px) { 
+    .navbar {
+        margin-left: 400px;
+    }
+    
+    header p {
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 1024px) { 
+    .navbar {
+        margin-left: 550px;
+    }
+}
+
+/* ---- Product Image ---- */
+#productContainer {
+    margin: 2em;
+}
+
+/* ---- Feature ----- */
+#featureContainer {
+    margin: 2em;
+}
+
+/* --- Review --- */
+#reviewContainer {
+    margin: 2em;
+}
+
+/* --- Info --- */
+#infoContainer {
+    margin: 2em;
+}
+
+#download a{
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+#download a img {
+    margin-top: 50px;
+}
 /* ----- Product Colour Circles ----- */
 #colourList li { 
     display:inline; 
@@ -24,6 +141,37 @@
 .black { background-color: $prodBlack; }  
 .silver { background-color: $prodSilver; }
 .gold{ background-color: $prodGold; }
+
+/* -------- Footer -------- */
+
+footer {
+    background: $bg-color-darkgrey;
+}
+
+button#backToTop {
+    border: 1;
+    box-shadow: none;
+    padding: .75em;
+}
+
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 998;
+    text-align: center;
+    line-height: 20px;
+    background: #FAFAFA;
+    cursor: pointer;
+    border-radius: 10px;
+    display: none;
+}
+
+#backToTop:hover {
+    background-color: #FAFAFA;
+}
+
+
     /* ----- End Product Colour Circles ----- */
 
     .chip {

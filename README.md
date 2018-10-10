@@ -37,6 +37,12 @@ $ cd Baile_Joanna_Hackathon
 
 ```
 
+## SQL
+Install db_midterm.sql into database.
+See below is the Fetch API working when "learn more" is clicked.
+
+![fetch](https://github.com/jobaile/Baile_Joanna_Hackathon/blob/master/images/fetch-working.png?raw=true)
+
 ## License
 
 This project is licensed under the [MIT License](https://opensource.org/licenses/MIT/).
